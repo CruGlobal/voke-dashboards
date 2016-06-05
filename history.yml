@@ -1,40 +1,18 @@
 ---
-convergence: |+
-  data: {"points":[{"x":10886,"y":38},{"x":10887,"y":30},{"x":10888,"y":9},{"x":10889,"y":18},{"x":10890,"y":22},{"x":10891,"y":43},{"x":10892,"y":46},{"x":10893,"y":44},{"x":10894,"y":48},{"x":10895,"y":42}],"id":"convergence","updatedAt":1464119586}
-
-buzzwords: |+
-  data: {"items":[{"label":"Synergy","value":13},{"label":"Leverage","value":14},{"label":"Pivoting","value":25},{"label":"Web 2.0","value":9},{"label":"Exit strategy","value":13},{"label":"Enterprise","value":5},{"label":"Paradigm shift","value":16},{"label":"Turn-key","value":3},{"label":"Streamlininess","value":8}],"id":"buzzwords","updatedAt":1463795764}
-
-valuation: |+
-  data: {"current":5000000,"last":0,"id":"valuation","updatedAt":1463790859}
-
-karma: |+
-  data: {"current":111114,"last":31371,"id":"karma","updatedAt":1463867265}
-
-synergy: |+
-  data: {"value":7,"id":"synergy","updatedAt":1463867265}
-
-welcome: |+
-  data: {"text":"Hey, Look what I can do!","id":"welcome","updatedAt":1464097865}
-
-total_users: |+
-  data: {"current":"1721","last":0,"id":"total_users","updatedAt":1464105333}
-
-monthly_users: |+
-  data: {"current":"127","last":0,"id":"monthly_users","updatedAt":1463790504}
-
-last_month: |+
-  data: {"current":"15","last":0,"id":"last_month","updatedAt":1463879788}
-
-topics: |+
-  data: {"items":[{"label":"Tennis Trick Shots ft. Serena Williams | Dude Perfect","value":"2"},{"label":"#FallingPlates","value":"2"}],"id":"topics","updatedAt":1464105317}
-
-links_shared: |+
-  data: {"current":"929","last":0,"id":"links_shared","updatedAt":1464105332}
-
-chatting: |+
-  data: {"current":"450","id":"chatting","updatedAt":1464105316}
-
-top_sharers: |+
-  data: {"items":[{"label":"2","value":"22"},{"label":"Contreras","value":"20"},{"label":"Watts","value":"17"},{"label":"Thomson","value":"16"},{"label":"Parmar","value":"15"},{"label":"Vergara","value":"14"},{"label":"Holberg","value":"14"},{"label":"Quintero","value":"13"},{"label":"ingku","value":"13"},{"label":"Cisneros","value":"12"},{"label":"Jiang","value":"11"},{"label":"Reyes","value":"11"},{"label":"Marti","value":"11"},{"label":"Savage","value":"11"},{"label":"Brocksmith","value":"11"}],"id":"top_sharers","updatedAt":1464105317}
-
+convergence: "data: {\"points\":[{\"x\":81,\"y\":16},{\"x\":82,\"y\":30},{\"x\":83,\"y\":0},{\"x\":84,\"y\":6},{\"x\":85,\"y\":23},{\"x\":86,\"y\":30},{\"x\":87,\"y\":32},{\"x\":88,\"y\":24},{\"x\":89,\"y\":38},{\"x\":90,\"y\":8}],\"id\":\"convergence\",\"updatedAt\":1465145725}\n\n"
+buzzwords: "data: {\"items\":[{\"label\":\"Synergy\",\"value\":13},{\"label\":\"Leverage\",\"value\":14},{\"label\":\"Pivoting\",\"value\":25},{\"label\":\"Web
+  2.0\",\"value\":9},{\"label\":\"Exit strategy\",\"value\":13},{\"label\":\"Enterprise\",\"value\":5},{\"label\":\"Paradigm
+  shift\",\"value\":16},{\"label\":\"Turn-key\",\"value\":3},{\"label\":\"Streamlininess\",\"value\":8}],\"id\":\"buzzwords\",\"updatedAt\":1463795764}\n\n"
+valuation: "data: {\"current\":5000000,\"last\":0,\"id\":\"valuation\",\"updatedAt\":1463790859}\n\n"
+karma: "data: {\"current\":111114,\"last\":31371,\"id\":\"karma\",\"updatedAt\":1463867265}\n\n"
+synergy: "data: {\"value\":7,\"id\":\"synergy\",\"updatedAt\":1463867265}\n\n"
+welcome: "data: {\"text\":\"Hey, Look what I can do!\",\"id\":\"welcome\",\"updatedAt\":1464097865}\n\n"
+total_users: "data: {\"current\":\"169\",\"last\":0,\"id\":\"total_users\",\"updatedAt\":1465145972}\n\n"
+monthly_users: "data: {\"current\":\"127\",\"last\":0,\"id\":\"monthly_users\",\"updatedAt\":1463790504}\n\n"
+last_month: "data: {\"current\":\"15\",\"last\":0,\"id\":\"last_month\",\"updatedAt\":1463879788}\n\n"
+topics: "data: {\"items\":[{\"label\":\"Tennis Trick Shots ft. Serena Williams | Dude
+  Perfect\",\"value\":\"2\"},{\"label\":\"#FallingPlates\",\"value\":\"2\"}],\"id\":\"topics\",\"updatedAt\":1464105317}\n\n"
+links_shared: "data: {\"current\":\"134\",\"last\":0,\"id\":\"links_shared\",\"updatedAt\":1465145972}\n\n"
+chatting: "data: {\"current\":\"45\",\"id\":\"chatting\",\"updatedAt\":1465145916}\n\n"
+top_sharers: "data: {\"items\":[{\"label\":\"Jar\",\"value\":\"38\"},{\"label\":\"Nirmal\",\"value\":\"30\"},{\"label\":\"Ramsey\",\"value\":\"27\"},{\"label\":\"Lk\",\"value\":\"23\"},{\"label\":\"Paul\",\"value\":\"20\"},{\"label\":\"LGK7\",\"value\":\"19\"},{\"label\":\"S3
+  Test\",\"value\":\"15\"},{\"label\":\"Marti\",\"value\":\"14\"},{\"label\":\"Ottanga\",\"value\":\"13\"},{\"label\":\"Aaa\",\"value\":\"13\"},{\"label\":\"S5test\",\"value\":\"13\"},{\"label\":\"Gxtixtu\",\"value\":\"13\"},{\"label\":\"Harrison\",\"value\":\"12\"},{\"label\":\"Nikora\",\"value\":\"11\"},{\"label\":\"Jiang\",\"value\":\"8\"}],\"id\":\"top_sharers\",\"updatedAt\":1465145916}\n\n"

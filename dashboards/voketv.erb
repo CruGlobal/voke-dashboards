@@ -10,10 +10,6 @@ Dashing.gridsterLayout('[{"col":2,"row":1,"size_x":1,"size_y":1},{"col":1,"row":
 <% content_for :title do %>Voke Dashboard<% end %>
 <div class="gridster">
   <ul>
-    <!--li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="welcome" data-view="Text" data-title="Hello" data-text="This is your shiny new dashboard." data-moreinfo="Protip: You can drag the widgets around!"></div>
-    </li-->
-
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="last_month" data-view="Number" data-title="New Users" data-moreinfo="Last Month"></div>
     </li>
@@ -42,9 +38,5 @@ Dashing.gridsterLayout('[{"col":2,"row":1,"size_x":1,"size_y":1},{"col":1,"row":
       <div data-id="total_users" data-view="Number" data-title="Total Users" data-moreinfo="Since Launch"></div>
     </li>
 
-    <!--li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="convergence" data-view="Graph" data-title="Convergence" style="background-color:#ff9618"></div>
-    </li-->
   </ul>
-  <!--center><div style="font-size: 12px">Try this: curl -d '{ "auth_token": "YOUR_AUTH_TOKEN", "text": "Hey, Look what I can do!" }' \http://<%=request.host%>:<%=request.port%>/widgets/welcome</div></center-->
 </div>

@@ -1,12 +1,28 @@
+require 'dotenv'
+Dotenv.load
+
 require 'dashing'
+$db = PG.connect(:hostaddr => ENV['DB_PORT_5432_TCP_ADDR'],
+                :user => ENV['DB_ENV_POSTGRESQL_USER'],
+                :password => ENV['DB_ENV_POSTGRESQL_PASS'],
+                :port => 5432,
+                :dbname => ENV['DB_ENV_POSTGRESQL_DB'])
 
 configure do
-  set :auth_token, 'YOUR_AUTH_TOKEN'
+  set :auth_token, ENV['AUTH_TOKEN']
 
   helpers do
     def protected!
-      # Put any authentication code you want in here.
-      # This method is run before accessing any resource.
+      unless authorized?
+        response['WWW-Authenticate'] = %(Basic realm="Restricted Area")
+        throw(:halt, [401, "Not authorized\n"])
+      end
+    end
+
+    def authorized?
+      @auth ||=  Rack::Auth::Basic::Request.new(request.env)
+      ENV['AUTH_USER'] && ENV['AUTH_PASS'] && @auth.provided? && @auth.basic? &&
+        @auth.credentials && @auth.credentials == [ENV['AUTH_USER'], ENV['AUTH_PASS']]
     end
   end
 end
