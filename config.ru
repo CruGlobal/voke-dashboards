@@ -1,5 +1,6 @@
 require 'dotenv'
 Dotenv.load
+require './lib/lb_monitor'
 
 require 'dashing'
 $db = PG.connect(:hostaddr => ENV['DB_PORT_5432_TCP_ADDR'],
@@ -27,8 +28,14 @@ configure do
   end
 end
 
+
+map '/monitors/lb' do
+  run LbMonitor
+end
+
 map Sinatra::Application.assets_prefix do
   run Sinatra::Application.sprockets
 end
 
 run Sinatra::Application
+
