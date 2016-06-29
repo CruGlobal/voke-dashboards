@@ -2,7 +2,7 @@ require 'pg'
 
 total_users = 0
 
-SCHEDULER.every '15s' do #, :first_in => 0 do |job|
+SCHEDULER.every '5m' do #, :first_in => 0 do |job|
   init_users = 0
 
   sql = "select count (distinct id) from users"
