@@ -1,10 +1,8 @@
-require 'pg'
-
 chatting = 0
 
 sql = "select count (distinct messenger_id) from messenger_conversation_messages"
 
-SCHEDULER.every '5m' do #, :first_in => 0 do |job|
+# SCHEDULER.every '5m' do #, :first_in => 0 do |job|
   $db.exec(sql) do |results|
 
      items = results.map do |row|
@@ -13,4 +11,4 @@ SCHEDULER.every '5m' do #, :first_in => 0 do |job|
 
   end
   send_event('chatting', { current: chatting[:value] })
-end
+# end

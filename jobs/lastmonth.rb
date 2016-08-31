@@ -1,8 +1,6 @@
-require 'pg'
-
 monthly_users = 0
 
-SCHEDULER.every '1d' do #, :first_in => 0 do |job|
+# SCHEDULER.every '1d' do #, :first_in => 0 do |job|
   init_users = 0
 
 #  send_event('valuation', { current: total_users, last: init_users })
@@ -18,4 +16,4 @@ SCHEDULER.every '1d' do #, :first_in => 0 do |job|
   end
   send_event('last_month', { current: monthly_users[:value], last: init_users })
 
-end
+# end

@@ -1,11 +1,8 @@
-require 'pg'
-
 links_shared = 0
+sql = "select count (distinct id) from messenger_conversations"
 
-SCHEDULER.every '5m' do #, :first_in => 0 do |job|
+# SCHEDULER.every '5m' do #, :first_in => 0 do |job|
   init_users = 0
-
-  sql = "select count (distinct id) from messenger_conversations"
 
   $db.exec(sql) do |results|
 
@@ -16,4 +13,4 @@ SCHEDULER.every '5m' do #, :first_in => 0 do |job|
   end
   send_event('links_shared', { current: links_shared[:value], last: init_users })
 
-end
+# end
