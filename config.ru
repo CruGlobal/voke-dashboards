@@ -3,7 +3,7 @@ Dotenv.load
 require './lib/lb_monitor'
 
 require 'dashing'
-$db = PG.connect(:hostaddr => ENV['DB_PORT_5432_TCP_ADDR'],
+$db = PG.connect(:host => ENV['DB_PORT_5432_TCP_ADDR'],
                 :user => ENV['DB_ENV_POSTGRESQL_USER'],
                 :password => ENV['DB_ENV_POSTGRESQL_PASS'],
                 :port => 5432,

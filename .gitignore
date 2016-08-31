@@ -35,3 +35,6 @@ bower.json
 .powenv
 vendor/ruby
 .env
+.env.local
+.idea
+history.yml
